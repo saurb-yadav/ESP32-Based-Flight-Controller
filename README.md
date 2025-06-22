@@ -7,11 +7,11 @@ I chose the ESP32 as the flight controller primarily for its low cost, onboard W
 
 ## 📷 Build Photos
 
-<img src="assets/esp32_mounted.jpg" alt="ESP32 mounted on frame" width="600"/>
+<img src="Assets/esp32_mounted.jpg" alt="ESP32 mounted on frame" width="600"/>
 <br/>
 <sub><i>ESP32 mounted on perfboard and attached to the F450 frame</i></sub>
 
-<img src="assets/setup_with_laptop.jpg" alt="Drone on table with code on screen" width="600"/>
+<img src="Assets/setup_with_laptop.jpg" alt="Drone on table with code on screen" width="600"/>
 <br/>
 <sub><i>PID tuning and motor testing workspace setup</i></sub>
 
