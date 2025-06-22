@@ -76,7 +76,7 @@ Refer to hand-drawn circuit diagram in:
 🔗 [GitHub](https://github.com/Ayush-31r) | [LinkedIn](https://linkedin.com/in/ayush-rai-v1)
 
 **Saurabh Yadav**
-📧 [rai4ayush@gmail.com](mailto:sy084464@gmail.com)  
+📧 [sy084464@gmail.com](mailto:sy084464@gmail.com)  
 🔗 [GitHub](https://gitHub.com/saurb-yadav) | [LinkedIn](http://www.linkedin.com/in/saurabh-yadav-3b1283256)
 
 
