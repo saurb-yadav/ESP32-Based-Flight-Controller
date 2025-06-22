@@ -4,7 +4,6 @@
 I chose the ESP32 as the flight controller primarily for its low cost, onboard WiFi & BLE capabilities, and potential for future ROS integration.
 
 ---
-
 ## 📷 Build Photos
 
 <img src="Assets/esp32_mounted.jpg" alt="ESP32 mounted on frame" width="600"/>
