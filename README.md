@@ -17,33 +17,60 @@ I chose the ESP32 as the flight controller primarily for its low cost, onboard W
 
 ---
 
-## 🎥 Tutorial Videos
-
-### 🛠️ How to Make?
-[![How to Make?](https://img.youtube.com/vi/1zZbk0xWIrc/0.jpg)](https://youtu.be/1zZbk0xWIrc)
-
-### 🛫 Dorm Flight
-[![Dorm flight](https://img.youtube.com/vi/2goVaf8LJQM/0.jpg)](https://youtu.be/2goVaf8LJQM)
-
-### 📈 Flight Stabilisation
-[![Flight stabilisation](https://img.youtube.com/vi/PweCWXNrxg0/0.jpg)](https://youtu.be/PweCWXNrxg0?si=KJHE-g0SIH3p4Ixf)
-
-### 🧠 Understanding PID Controller
-[![Understanding PID Controller](https://img.youtube.com/vi/dMRDzicSvXk/0.jpg)](https://youtu.be/dMRDzicSvXk?si=4SlX_EvzxvCbH7zv)
-
-### 🌐 Tuning PID Gains via Webserver
-[![Tuning of PID Controller Gains](https://img.youtube.com/vi/kl3Dlm11AEQ/0.jpg)](https://youtu.be/kl3Dlm11AEQ?si=NrJVn8WFx9-ViMtl)
-
----
-
 ## ✅ Testing Before Flight
 
 Use the testing codes provided in the `test/` folder:
 
-- `reciever_pwm_esp32.ino` – Check transmitter & receiver signals
 - `measure_angles_from_mpu.ino` – Validate IMU angle output
 - `motor_calibration_esp32.ino` – Calibrate and sync ESCs/motors
-- `Voltage_measurement_esp32.ino` – Test voltage sensing (optional)
 - `anglemode_flightcontroller_ver3.1_PID_values_tuning_webserver.ino` – PID tuning via webserver
 
 Refer to hand-drawn circuit diagram in:
+
+---
+
+## 🧪 IMU Calibration & Code Update
+
+1. **Calibrate IMU**
+   - Run: `Gyro_accelerometer_calibration.ino` from `src/`
+   - Place the quadcopter on a flat surface and log the calibration values via serial monitor.
+
+2. **Update Flight Code**
+   - Insert those calibrated offset values into the `setup()` of `Anglemode_flightcontroller_ver3.1.ino`
+
+---
+
+## 🛠️ PID Gain Tuning
+
+- Use `anglemode_flightcontroller_ver3.1_PID_values_tuning_webserver.ino` to wirelessly tune PID via WiFi.
+- Recommended to watch the YouTube video (linked above).
+- If you're using an **F450 frame**, the default values in code should be close; for other frames, tune accordingly.
+
+---
+
+## 🚀 Flight Prep Checklist
+
+1. ✅ Calibrate IMU and insert offsets
+2. ✅ Ensure motor and propeller direction matches schematic
+3. ✅ Secure all connections and components
+4. ✅ Upload the main flight code after verification
+5. ✅ Do **initial flight testing outdoors**
+6. ⚠️ **SAFETY FIRST**:
+   - Always test with props off when debugging
+   - Wear safety glasses during live tests
+   - Keep your hands and face away from the frame during armed state
+
+---
+
+## 📌 References
+
+- [Joop Brokking](https://www.youtube.com/@Joop_Brokking)  
+- [Carbon Aeronautics](https://youtube.com/@carbonaeronautics?si=-DZ1Sz5sgNruoJgR)
+
+---
+
+## 🧑‍💻 Author
+
+**Ayush Rai**  
+📧 [rai4ayush@gmail.com](mailto:rai4ayush@gmail.com)  
+🔗 [GitHub](https://github.com/Ayush-31r) | [LinkedIn](https://linkedin.com/in/ayush-rai-v1)
